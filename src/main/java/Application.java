@@ -1,6 +1,8 @@
 public class Application {
     public static void main(String[] args) {
-        Render render = new Render(new Map(10, 10));
+        Simulation simulation = new Simulation();
+        simulation.startSimulation();
+        Render render = new Render();
         render.print();
     }
 }
